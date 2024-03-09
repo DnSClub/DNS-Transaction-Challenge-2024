@@ -9,11 +9,11 @@ IOS: ```https://apps.apple.com/us/app/nfc-tools/id1252962749```
 
 Please note that due to limited server capacity for this event
 we implore you to limit calls to our server through these APIs
-to only one function call every second, idealy once every 5 or so seconds.
+to only one function call every second, ideally once every 5 or so seconds.
 
-We understand if some minor exeptions to this are required and have the capacity to support this, but please if possible comply with this message.
+We understand if some minor exceptions to this are required and have the capacity to support this, but please if possible comply with this message.
 
-The network has security and will auto detect users abusing the network with high frequency calls, users will have their access auto removed by the network security protocal if sufficent calls are made within a quick time period.
+The network has security and will auto-detect users abusing the network with high-frequency calls, users will have their access auto-removed by the network security protocol if sufficient calls are made within a quick time period.
 
 Also please note this event's APIs do not have high security built in, so please do not send any sensitive information via API calls (or API calls beyond the scope of this event).
 
@@ -99,7 +99,7 @@ Dependencies: BSD Sockets (Build into most UNIX-like Systems) || winsock (For C/
 bank_verify(account_id: str, subject: str, first_arg: str, second_arg="")
 #Bank Verifications take Account ID, String Inputs's ("NAME", "CODE", "PASS")
 #and then the corresponding verifications and will return if the Account ID
-#is accociated with the correspoing name/transaction code/password.
+#is associated with the corresponding name/transaction code/password.
 #Use First Arg for: First Name. Transaction Code, Password.
 #Use Secont Arg for: Last Name. Will return a string status
 
@@ -107,13 +107,13 @@ bank_transfer(account_from:str, account_to:str, secure_code: str, amount: str)
 #Bank Transfers Take a From Account & From Transaction Code and deposit the amount in the To Account. Will return a string message
 
 bank_get_info(account_id: str)
-#Information Requests will return information about a users account for networks to verify in the form of a string message.
+#Information Requests will return information about a user account for networks to verify in the form of a string message.
 
 bank_status()
 #Will return if the Bank Server is Online
 
 bank_time()
-#Will return the current time of the Bank Server (In Saskachuwan Time CST)
+#Will return the current time of the Bank Server (In Saskatchewan Time CST)
 ```
 ```
 #Example Use:
@@ -136,13 +136,13 @@ network_check(network_id: str)
 #Network Checks will inform the user how many packets are waiting to be processed in the server. Returns a String.
 
 network_request(network_id: str)
-#Network Requests will grab the oldest stored packet in the network que return it to you as a string and the remove the packet from the que.
+#Network Requests will grab the oldest stored packet in the network queue return it to you as a string and then remove the packet from the queue.
 
 network_status()
 #Will return if the Network Server is Online
 
 network_time()
-#Will return the current time of the Network Server (In Saskachuwan Time CST)
+#Will return the current time of the Network Server (In Saskatchewan Time CST)
 ```
 ```
 #Example Use:
@@ -157,12 +157,12 @@ ________________________________
 Objective:
 ```
 Be the first person to create a Debit and or Credit Card Network(bonus points for a Credit Network).
-Sign up our merchent vendors.
+Sign up our merchant vendors.
 Sign up one of our execs to your network.
-And pay for your prize using balence from the DNS Bank(or your bank of choice) Using An NFC Card Payment At The DNS Payment Terminal.
+And pay for your prize using balance from the DNS Bank(or your bank of choice) Using An NFC Card Payment At The DNS Payment Terminal.
 
-Debit Networks Need Only To Transfer a Balence From One Account To Another.
-Credit Networks Need a More Advanced System Where In Balence Reaches The Merchent Account(Minus A Transaction Fee), Debt Is Issued To The Customer and Some Form of Points/Cashback is Given To Customers.
+Debit Networks Need Only To Transfer a Balance From One Account To Another.
+Credit Networks Need a More Advanced System Where In Balance Reaches The Merchant Account(Minus A Transaction Fee), Debt Is Issued To The Customer and Some Form of Points/Cashback is Given To Customers.
 
 Servers Are Not Required For This Event, However Some Form Of Account System Will Be Needed On Your Network To Register Accounts To Your Transaction Network.
 ```
